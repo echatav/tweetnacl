@@ -1,0 +1,31 @@
+name: tweetnacl
+version: 0.0.0.1
+synopsis: Haskell bindings to TweetNaCl
+description: Haskell bindings to TweetNaCl, a crypto library in 100 tweets
+homepage: https://github.com/echatav/tweetnacl
+author: Eitan Chatav
+maintainer: eitan.chatav@gmail.com
+copyright: 2017 Morphism, LLC
+category: Cryptography
+build-type: Simple
+cabal-version: >=1.10
+
+library
+  hs-source-dirs: src
+  exposed-modules:
+    Crypto.Tweet.Auth
+    Crypto.Tweet.C
+    Crypto.Tweet.Box
+    Crypto.Tweet.Hash
+    Crypto.Tweet.OneTimeAuth
+    Crypto.Tweet.ScalarMult
+    Crypto.Tweet.SecretBox
+    Crypto.Tweet.Sign
+    Crypto.Tweet.Stream
+  default-language: Haskell2010
+  ghc-options: -Wall -Werror
+  build-depends: base
+
+source-repository head
+  type: git
+  location: https://github.com/echatav/tweetnacl
