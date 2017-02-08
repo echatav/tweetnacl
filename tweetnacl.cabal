@@ -25,6 +25,9 @@ library
   default-language: Haskell2010
   ghc-options: -Wall -Werror
   build-depends: base
+  extra-source-files:
+    cbits/tweetnacl.h
+    cbits/tweetnacl.c
 
 source-repository head
   type: git
